@@ -4,7 +4,7 @@ def eleccionmodelo (df):
     from sklearn.ensemble import RandomForestClassifier
     from sklearn import svm, metrics,linear_model,tree
     import statsmodels.api as sm
-	import pandas as pd
+    import pandas as pd
     
     metodo = []  #algorithm name
     gini = []    #algorithm gini
