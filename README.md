@@ -6,7 +6,7 @@ A continuación se detallará el contenido y uso del paquete prusontchm generado
 
 ## Instalación
 
-Para realizar la instalación bastará con ejecutar en la consola de comando el siguiente código:
+Para realizar la instalación bastará con ejecutar en la consola de comandos el siguiente código:
 
 ```javascript
 python -m pip intall prusontchm
