@@ -4,7 +4,6 @@ def eleccionmodelo (df):
     from sklearn.ensemble import RandomForestClassifier
     from sklearn import svm, metrics,linear_model,tree
     import statsmodels.api as sm
-    import pandas as pd
     
     metodo = []  #algorithm name
     gini = []    #algorithm gini
@@ -59,7 +58,7 @@ def eleccionmodelo (df):
     #Hora de inicio.
     start_time = time.time()
     
-    model= RandomForestClassifier(n_estimators=1000, max_depth=60 )
+    model= RandomForestClassifier(n_estimators=1000, max_depth=60, n_jobs=2 )
     resultRF = model.fit(dfaux, df[objetivo])
     
     # Tiempo transcurrido en la ejecución

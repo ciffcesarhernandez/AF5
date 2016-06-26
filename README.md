@@ -24,7 +24,7 @@ Para poder hacer uso de esta función sólo es necesario importar la librería D
 from prusontchm import DataCleaning as dc
 ````
 
-Y posteriormente llamar a la función limpiezaDeDatos cuyo parámetro de entrada será el Data Frame que se desee limpiar y se devolverá el Data Frame limpio.
+Y posteriormente llamar a la función limpiezaDeDatos cuyo parámetro de entrada será el Data Frame que se desee limpiar y que devolverá el Data Frame limpio.
 
 ```javascript
 dfLimpio = dc.limpiezaDeDatos(df)
@@ -32,7 +32,7 @@ dfLimpio = dc.limpiezaDeDatos(df)
 
 * A.4) Creación automática de ratio y selección de los mejores ratios utilizando Principal Component Analysis y árbol de decisión.
 
-Para la creación de nuevos ratios se ha creado la función NuevosRatios de en la librería ratios. Que dado un Data Frame genera los siguientes nuevos ratios para todas sus columnas a excepción de las variables target e id. 
+Para la creación de nuevos ratios se ha creado la función NuevosRatios en la librería ratios. Que dado un Data Frame genera los siguientes nuevos ratios para todas sus columnas, a excepción de las variables target e id. 
 
 (X-Y)/Y
 
@@ -57,7 +57,7 @@ df = ratios.NuevosRatios(df)
 ```
 Obtenemos un nuevo Data Frame con las variables originales y las nuevas.
 
-También se ha generado un método que utilizando PCA y árbol de decisión seleccione los 30 mejores ratios, este es Seleccion_Ratios de la nueva librería RatioSelection
+También se ha generado un método que utilizando PCA y árbol de decisión que seleccione los 30 mejores ratios, este es Seleccion_Ratios de la nueva librería RatioSelection
 
 ```javascript
 from prusontchm import RatioSelection as rs
